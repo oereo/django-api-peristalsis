@@ -44,3 +44,9 @@ class User(AbstractBaseUser):
     @property
     def followed_count(self):
         return User.objects.filter(following=self).count()
+
+
+class Profile(models.Model):
+    user = models.OneToOneField()
+
+
