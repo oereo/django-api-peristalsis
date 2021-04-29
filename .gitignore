@@ -1,4 +1,8 @@
 venv
 .idea
+<<<<<<< HEAD
 __pychche__
 django_rest_api/db.sqlite3
+=======
+__pycache__
+>>>>>>> b8e839b6a229b4157aed6ece6036dc4e51e54143
