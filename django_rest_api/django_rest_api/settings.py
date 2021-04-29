@@ -19,13 +19,13 @@ DEFAULT_APPS = [
 ]
 
 PROJECT_APPS = [
-    'accounts'
+    'accounts',
 ]
 
 COMMON_APPS = [
     'rest_framework',
     'rest_framework_jwt',
-    'corsheaders'
+    'corsheaders',
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + PROJECT_APPS + COMMON_APPS
@@ -61,7 +61,7 @@ JWT_AUTH = {  # 추가
     'JWT_ALLOW_REFRESH': True,
     'JWT_EXPIRATION_DELTA': datetime.timedelta(minutes=30),
     'JWT_REFRESH_EXPIRATION_DELTA': datetime.timedelta(days=3),
-    'JWT_RESPONSE_PAYLOAD_HANDLER': 'api.custom_responses.my_jwt_response_handler'
+    'JWT_RESPONSE_PAYLOAD_HANDLER': 'django_rest_api.global_utils.custom_response.my_jwt_response_handler'
 }
 
 
