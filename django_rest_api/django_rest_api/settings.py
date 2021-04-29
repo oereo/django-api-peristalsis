@@ -19,7 +19,8 @@ DEFAULT_APPS = [
 ]
 
 PROJECT_APPS = [
-    'accounts'
+    'accounts',
+    'post'
 ]
 
 COMMON_APPS = [
