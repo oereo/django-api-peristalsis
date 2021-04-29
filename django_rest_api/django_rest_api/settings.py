@@ -65,8 +65,9 @@ JWT_AUTH = {  # 추가
 }
 
 
-ROOT_URLCONF = 'django_rest_api.urls'
+# AUTH_USER_MODEL = 'accounts.User'
 
+ROOT_URLCONF = 'django_rest_api.urls'
 
 TEMPLATES = [
     {
