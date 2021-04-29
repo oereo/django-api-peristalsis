@@ -13,7 +13,7 @@ from .models import Profile, User
 
 @api_view(['GET'])
 def current_user(request):
-
+    print(request)
     serializer = UserSerializer(request.user)
     return Response(serializer.data)
 
